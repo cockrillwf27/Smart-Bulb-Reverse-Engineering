@@ -18,4 +18,4 @@ with open(OUTPUT_FILE, "w", encoding="utf-8", errors="ignore") as out:
     for s in strings:
         out.write(s.decode("utf-8", errors="ignore") + "\n")
 
-print(f"✅ {OUTPUT_FILE} created with {len(strings)} strings")
+print(f" {OUTPUT_FILE} created with {len(strings)} strings")

@@ -19,6 +19,7 @@
 
 
 ## Bootloader Entry Procedure (What Finally Worked)
+
 <p align="left">
   <img src="images/PCBPinConnections.jpg" width="400">
 </p>

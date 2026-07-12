@@ -85,8 +85,5 @@ This hands-on project gave me end-to-end experience reverse engineering a commer
 
 ---
 
-**Links**
-- Portfolio: [your portfolio link]
-- Related project: Bee Hive Monitoring System (ESP32-based autonomous sensor node)
 
 **Technologies**: ESP8684 • esptool.py • Ghidra • Python • Wireshark • UART/SPI • MQTT/TLS • Oracle VirtualBox

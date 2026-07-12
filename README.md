@@ -62,6 +62,12 @@ As part of an embedded systems and reverse engineering lab, I performed a comple
 
 See `docs/hardware_setup.md` for detailed wiring notes and power-cycle timing that finally produced reliable `boot:0x4 (DOWNLOAD(UART0))` messages.
 
+<p align="left">
+  <img src="images/SystemSetupImage.png" width="200">
+</p>
+
+
+
 ## Repository Contents
 
 - `docs/` — Detailed technical notes on hardware setup, esptool commands (including the successful 460800 baud dump), firmware/string analysis, and Wireshark findings

@@ -17,5 +17,5 @@ with open(INPUT_FILE, "rb") as f:
 with open(OUTPUT_FILE, "wb") as out:
     out.write(data)
 
-print(f"✅ {OUTPUT_FILE} created successfully")
+print(f" {OUTPUT_FILE} created successfully")
 print(f"   Extracted {SIZE} bytes from offset {OFFSET}")

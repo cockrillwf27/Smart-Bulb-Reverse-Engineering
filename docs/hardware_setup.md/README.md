@@ -17,7 +17,6 @@
 | -                  | GPIO9 ("09" pad)    | Ground for bootloader mode         |
 | -                  | EN (Reset)          | Ground together with GPIO9         |
 
-
 <p align="left">
   <img src="images/PCBPinConnections.jpg" width="200">
 </p>

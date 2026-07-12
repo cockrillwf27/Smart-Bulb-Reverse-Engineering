@@ -17,13 +17,11 @@
 | -                  | GPIO9 ("09" pad)    | Ground for bootloader mode         |
 | -                  | EN (Reset)          | Ground together with GPIO9         |
 
+
+## Bootloader Entry Procedure (What Finally Worked)
 <p align="left">
   <img src="images/PCBPinConnections.jpg" width="400">
 </p>
-
-
-## Bootloader Entry Procedure (What Finally Worked)
-
 1. Connect all wires as shown above.
 2. Ground **both** the "09" (GPIO9) pad **and** the EN pad.
 3. Unplug the Arduino USB power for **8 seconds**.

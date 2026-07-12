@@ -2,6 +2,12 @@
 
 **Reverse engineered the firmware and communication protocol of a commercial Wi-Fi RGB + CCT smart LED bulb (ESP8684-based) to understand its embedded architecture, LED control mechanisms, and cloud connectivity.**
 
+<p align="left">
+  <img src="images/ExteriorBulbLabelImage.png" width="400">
+</p>
+
+
+
 ## Project Overview
 
 As part of an embedded systems and reverse engineering lab, I performed a complete hardware-to-protocol analysis on a retail smart bulb (model markings: a5w2, 9W RGB+CCT). The device uses an Espressif ESP8684 (ESP32-C2 RISC-V) microcontroller with 2 MB embedded flash.

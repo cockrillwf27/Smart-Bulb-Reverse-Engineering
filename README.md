@@ -2,7 +2,7 @@
 
 **Reverse engineered the firmware and communication protocol of a commercial Wi-Fi RGB + CCT smart LED bulb (ESP8684-based) to understand its embedded architecture, LED control mechanisms, and cloud connectivity.**
 
-<p align="center">
+<p align="left">
   <img src="images/ExteriorBulbLabelImage.png" width="200">
 </p>
 
@@ -62,7 +62,7 @@ As part of an embedded systems and reverse engineering lab, I performed a comple
 
 See `docs/hardware_setup.md` for detailed wiring notes and power-cycle timing that finally produced reliable `boot:0x4 (DOWNLOAD(UART0))` messages.
 
-<p align="center">
+<p align="left">
   <img src="images/SystemSetupImage.png" width="200">
 </p>
 

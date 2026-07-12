@@ -18,7 +18,7 @@
 | -                  | EN (Reset)          | Ground together with GPIO9         |
 
 <p align="left">
-  <img src="images/PCBPinConnections.jpg" width="200">
+  <img src="images/PCBPinConnections.jpg" width="400">
 </p>
 
 

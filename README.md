@@ -3,7 +3,7 @@
 **Reverse engineered the firmware and communication protocol of a commercial Wi-Fi RGB + CCT smart LED bulb (ESP8684-based) to understand its embedded architecture, LED control mechanisms, and cloud connectivity.**
 
 <p align="left">
-  <img src="images/ExteriorBulbLabelImage.png" width="400">
+  <img src="images/ExteriorBulbLabelImage.png" width="200">
 </p>
 
 

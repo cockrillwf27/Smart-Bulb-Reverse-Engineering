@@ -17,12 +17,12 @@ As part of an embedded systems and reverse engineering lab, I performed a comple
 
 - Identified the SoC as **ESP8684H** (single-core RISC-V, 120 MHz, 2 MB flash)
 - Developed a reliable bootloader entry method (simultaneous grounding of GPIO9/"09" pad and EN pin during power-up)
-- Successfully dumped the full 2 MB firmware using esptool.py
+- Successfully dumped the full 2 MB firmware image using esptool.py
 - Extracted the main application partition and generated clean string artifacts for analysis
+- **Located the configured WiFi SSID and password** in the device's firmware strings / configuration data
 - Determined that LED configuration is stored in NVS under `light_cfg` / `light_cfg_info`
 - Identified **GPIO[10]** and **GPIO[7]** as the likely PWM channels for RGB + warm/cool white control (configured as output + open-drain + pull-up)
 - Confirmed the bulb uses **MQTT over TLS** to AWS IoT Core (us-west-2 endpoint)
-- Verified no hardcoded Wi-Fi credentials in firmware (configuration stored in NVS)
 - Analyzed captured traffic with Wireshark, confirming encrypted MQTT sessions and local network behavior (ARP)
 - Documented the full workflow including hardware wiring, esptool commands, baud-rate considerations, and analysis steps
 
@@ -76,13 +76,17 @@ This project complements my prior ESP32 embedded work (autonomous bee hive monit
 ## Challenges & Solutions
 
 - Initial esptool "Failed to connect" errors → discovered that GPIO9 alone was insufficient; required grounding both GPIO9 and EN simultaneously with precise power-cycle timing
-- Flash read corruption at high baud rates → stepped down to 460800 baud after the stub flasher loaded (initial 74880 baud used for reliable handshake)
+- Flash read corruption at high baud rates during flash read → stepped down to 460800 baud after the stub flasher loaded (initial 74880 baud used for reliable handshake)
 - Distinguishing bootloader vs. application boot messages in noisy serial output
 
 ## Conclusion
 
-This hands-on project gave me end-to-end experience reverse engineering a commercial IoT device — from physical hardware access through firmware dumping, string analysis, GPIO mapping, and protocol characterization. It reinforced my interest in embedded systems security and observability of legacy/control interfaces.
+This hands-on project gave me end-to-end experience reverse engineering a commercial IoT device — from physical hardware access through firmware dumping, string analysis, GPIO mapping, WiFi credential recovery, and protocol characterization. It reinforced my interest in embedded systems security and observability of legacy/control interfaces.
 
 ---
+
+**Links**
+- Portfolio: [your portfolio link]
+- Related project: Bee Hive Monitoring System (ESP32-based autonomous sensor node)
 
 **Technologies**: ESP8684 • esptool.py • Ghidra • Python • Wireshark • UART/SPI • MQTT/TLS • Oracle VirtualBox
